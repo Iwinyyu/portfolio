@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
 :root {
   --background-rgb: rgb(52, 58, 64);
   --highlight-rgb: rgb(255, 193, 7);
@@ -9,7 +18,21 @@
   --text-100-rgb: rgba(225, 232, 235, 1);
   --text-85-rgb: rgba(225, 232, 235, 0.85);
   --text-70-rgb: rgba(225, 232, 235, 0.7);
-
+}
+.darkbgcolor {
+  background-color: var(--background-rgb);
+}
+.yellowbgcolor {
+  background-color: var(--highlight-rgb);
+}
+.textcolor {
+  color: var(--highlight-rgb);
+}
+.textsubcolor {
+  color: var(--text-100-rgb);
+}
+.textsubcolor85 {
+  color: var(--text-85-rgb);
 }
 
 /*@media (prefers-color-scheme: dark) {

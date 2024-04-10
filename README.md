@@ -8,7 +8,7 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-https://colorhunt.co/palette/343a407952b3ffc107e1e8eb
+
 # or
 pnpm dev
 # or
