@@ -1,11 +1,11 @@
 export default function Logo(fill) {
   return (
-    <div className="relative w-[55px] h-[55px]">
+    <div className="relative w-[55px] h-[55px] logocontainer">
       <svg
       viewBox="0 0 600 600"
       fill="#FFC107"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-[55px] h-[55px] absolute inset-0 "
+      className="w-[55px] h-[55px] absolute inset-0 animate-spin-slower transition transform ease-out"
     >
       <g clip-path="url(#clip0_192_137)">
         <path
@@ -16,12 +16,12 @@ export default function Logo(fill) {
       </g>
     </svg>
 
-    <button className="transition duration-300 ease-in-out flex justify-center items-center relative hover:-translate-y-1 hover:-translate-x-1">
+    <button className="transition duration-300 ease-in-out flex justify-center items-center relative hover:-translate-y-1 hover:-translate-x-1.5">
     <svg
       viewBox="0 0 600 600"
       fill="rgb(52, 58, 64)"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-[55px] h-[55px] inset-0"
+      className="w-[55px] h-[55px] inset-0 animate-spin-slower transition duration-150 ease-out"
     >
       <g clip-path="url(#clip0_192_137)">
         <path
@@ -31,7 +31,7 @@ export default function Logo(fill) {
         />
       </g>
     </svg>
-    <span className="text-2xl textcolor absolute">IY</span>
+    <span className="text-2xl textcolor absolute font-extrabold">IY</span>
     </button>
     </div>
   );
