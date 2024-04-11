@@ -1,10 +1,11 @@
-export default function Logo() {
+export default function Logo(fill) {
   return (
-    <svg
+    <div className="relative w-[55px] h-[55px]">
+      <svg
       viewBox="0 0 600 600"
-      fill="none"
+      fill="#FFC107"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-[55px] h-[55px]"
+      className="w-[55px] h-[55px] absolute inset-0 "
     >
       <g clip-path="url(#clip0_192_137)">
         <path
@@ -12,17 +13,26 @@ export default function Logo() {
           stroke="#FFC107"
           stroke-width="50"
         />
+      </g>
+    </svg>
+
+    <button className="transition duration-300 ease-in-out flex justify-center items-center relative hover:-translate-y-1 hover:-translate-x-1">
+    <svg
+      viewBox="0 0 600 600"
+      fill="rgb(52, 58, 64)"
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-[55px] h-[55px] inset-0"
+    >
+      <g clip-path="url(#clip0_192_137)">
         <path
-          d="M231.408 198.719V412H183.801V198.719H231.408ZM299.963 198.719L341.711 293.641L383.752 198.719H435.314L366.027 334.949V412H317.541V334.949L248.107 198.719H299.963Z"
-          fill="#FFC107"
+          d="M300 36C367.394 28.6787 464.375 19.2565 455.175 86.4195C448.282 136.74 558.849 168.227 551.079 218.419C540.861 284.424 571.496 317.988 551.079 381.58C534.33 433.748 405.438 490.599 455.175 513.58C513.99 540.757 312.584 627.556 300 564C288.387 505.348 190.761 551.853 144.825 513.58C95.8157 472.748 103.714 414.244 48.9211 381.58C-8.44907 347.381 96.3135 265.482 48.9211 218.419C7.20524 176.994 92.82 59.0005 144.825 86.4195C215.406 123.633 220.676 44.6173 300 36Z"
+          stroke="#FFC107"
+          stroke-width="50"
         />
       </g>
-      <rect x="0.5" y="0.5" width="599" height="599" stroke="black" />
-      <defs>
-        <clipPath id="clip0_192_137">
-          <rect width="600" height="600" fill="white" />
-        </clipPath>
-      </defs>
     </svg>
+    <span className="text-2xl textcolor absolute">IY</span>
+    </button>
+    </div>
   );
 }
