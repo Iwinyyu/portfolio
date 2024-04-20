@@ -1,7 +1,6 @@
 import { Roboto, Space_Mono } from "next/font/google";
 import dynamic from "next/dynamic";
 import "./globals.css";
-import Firstload from "./firstload";
 const Navbar = dynamic(()=> import("./Navbar"), {ssr:false})
 
 const roboto = Roboto({
