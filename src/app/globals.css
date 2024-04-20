@@ -34,6 +34,10 @@
 .textsubcolor85 {
   color: var(--text-85-rgb);
 }
+.logocontainer {
+  opacity: 0;
+  animation: 0.5s slidein forwards;
+}
 
 .logocontainer:hover > svg {
   visibility: visible;
@@ -42,10 +46,7 @@
 .logocontainer:hover > button > svg {
   animation-play-state: paused;
 }
-.nav {
 
-  transition: transform 300ms;
-}
 .full {
   transition: padding 300ms;
   transition: box-shadow 500ms;
@@ -90,6 +91,25 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 
