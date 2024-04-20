@@ -46,9 +46,9 @@
   animation-play-state: paused;
 }
 .photo-container:hover > div > .img {
-  transform: translate(-2rem,-2rem);
-  /* transform: translateY(); */
+  transform: translate(-1.5rem,-1.5rem);
 }
+
 
 .full {
   transition: padding 300ms;

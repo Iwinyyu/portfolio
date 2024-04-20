@@ -10,10 +10,12 @@ export default function Sidebar() {
     let cord = window.scrollY
     if (SideNav === false) {
       document.body.style.position = "fixed";
+      document.body.style.padding = "20px";
       document.body.style.top = `-${cord}px`;
     } else {
       const scrollY = document.body.style.top;
       document.body.style.position = "";
+      document.body.style.padding = "";
       document.body.style.top = "";
       window.scrollTo(0, parseInt(scrollY || "0") * -1);
     }
@@ -21,7 +23,7 @@ export default function Sidebar() {
   }
 
   return (
-    <Fragment>
+    <div>
       <button
         onClick={handleanimation}
         className="transition duration-200 relative size-11 active:rotate-180 active:scale-50 z-30 sm:hidden"
@@ -42,10 +44,10 @@ export default function Sidebar() {
           SideNav ? "-translate-x-full" : ""
         } sm:hidden`}
       >
-        <div className="absolute top-0 right-0 bottom-0 bg-darken-color w-4/6 h-screen flex justify-center items-center">
+        <div className="absolute top-0 right-0 bottom-0 bg-darken-color w-4/6 z-20 h-screen flex justify-center items-center">
           <Links direction={"vertical"} />
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 }

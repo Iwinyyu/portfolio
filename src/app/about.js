@@ -93,7 +93,8 @@ export default function About() {
         <div className="transition rounded-md border-solid border-yellow-color">
           <Image
             src={ME}
-            className="transition img w-full min-w-[240px] object-cover rounded-md z-10 -translate-x-5 -translate-y-5"
+            alt="A PHOTO of ME"
+            className="transition duration-300 img w-full min-w-[240px] object-cover rounded-md"
           ></Image>
         </div>
       </div>
