@@ -16,7 +16,7 @@
   --highlight-rgb: rgb(255, 193, 7);
   --highlight-alter-rgb: rgb(255, 244, 85);
   --text-100-rgb: rgba(225, 232, 235, 1);
-  --text-85-rgb: rgba(225, 232, 235, 0.85);
+  --text-secondary-rgb: rgb(136, 146, 176);
   --text-70-rgb: rgba(225, 232, 235, 0.7);
 }
 .darkbgcolor {
@@ -34,6 +34,26 @@
 .textsubcolor85 {
   color: var(--text-85-rgb);
 }
+
+
+.tabs::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+  background: #88888800;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--text-secondary-rgb);
+  border-radius: 5px;
+}
+
+
 .logocontainer {
   animation: 0.5s slidein forwards;
 }
@@ -45,13 +65,12 @@
 .logocontainer:hover > button > svg {
   animation-play-state: paused;
 }
-.img{
-  transform: translate(-1rem,-1rem);
+.img {
+  transform: translate(-1rem, -1rem);
 }
 .photo-container:hover > div > .img {
-  transform: translate(-2rem,-2rem);
+  transform: translate(-2rem, -2rem);
 }
-
 
 .full {
   transition: padding 300ms;

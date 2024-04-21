@@ -62,7 +62,7 @@ export default function Experiences(props) {
   }
 
   return (
-    <div className="w-full py-10 flex flex-col items-center justify-center gap-10 max-w-[1000px]">
+    <div className="w-full py-10 flex flex-col items-center justify-center gap-5 sm:gap-10 max-w-[1000px]">
       <div className="flex items-center justify-center gap-5 w-full sm:w-3/4">
         <div className="text-2xl text-sub-color font-bold whitespace-nowrap">
           <span className="font-Space text-yellow-color ">02.</span>
@@ -70,21 +70,21 @@ export default function Experiences(props) {
         </div>
         <div className="h-[1px] bg-secondary-color w-full"></div>
       </div>
-      <div className="flex w-full sm:w-3/4">
-        <div className="font-Space text-sm relative flex flex-col [&>button]:transition [&>button]:duration-200 hover:[&>button]:bg-darken-color hover:[&>button]:text-yellow-color">
+      <div className="flex flex-col sm:flex-row w-full sm:w-3/4">
+        <div className="overscroll-contain tabs overflow-x-auto overflow-y-hidden sm:overflow-visible font-Space text-sm relative flex flex-row sm:flex-col [&>button]:transition [&>button]:duration-200 hover:[&>button]:bg-darken-color hover:[&>button]:text-yellow-color">
           {experiences.map((e) => (
             <button
               onClick={() => handleclick(e.id)}
               key={e.id}
-              className={`border-solid border-y-0 border-r-0 border-l-2 border-secondary-color text-secondary-color w-36 h-11 px-5 flex justify-start items-center ${
+              className={` flex sm:justify-start justify-center items-center border-solid border-x-0 border-b-2 border-t-0 shrink-0 sm:border-y-0 sm:border-r-0 sm:border-l-2 border-secondary-color text-secondary-color w-36 h-11 px-5 ${
                 ShowInfo === e.id ? "text-yellow-color bg-darken-color" : ""
               }`}
             >
-              <span>{e.company}</span>
+              <span className=" whitespace-nowrap">{e.company}</span>
             </button>
           ))}
           <div
-            className={`transition duration-500 w-[2px] h-11 bg-yellow-color absolute ${
+            className={`transition duration-500 h-[2px] w-36 bottom-0 sm:top-0 sm:w-[2px] sm:h-11 bg-yellow-color absolute sm:${
               ShowInfo === 3
                 ? "translate-y-[300%]"
                 : ShowInfo === 2
@@ -92,10 +92,18 @@ export default function Experiences(props) {
                 : ShowInfo === 1
                 ? "translate-y-[100%]"
                 : ""
+            } ${
+              ShowInfo === 3
+                ? "translate-x-[300%]"
+                : ShowInfo === 2
+                ? "translate-x-[200%]"
+                : ShowInfo === 1
+                ? "translate-x-[100%]"
+                : ""
             }`}
           ></div>
         </div>
-        <div className="px-2">
+        <div className="py-4 sm:px-2">
           {}
           <div className="title flex flex-col pb-6">
             <span className="text-sub-color text-xl font-semibold">
@@ -106,17 +114,12 @@ export default function Experiences(props) {
           </div>
           <div className="description">
             {experiences[ShowInfo].descriptions.map((e) => 
-              <p className="text-secondary-color flex items-center py-1">
-                <span className="bg-yellow-color rounded-full size-3 mr-6 shrink-0"></span>
+              <p key={e} className="text-secondary-color flex items-center py-1">
+                <span className="bg-yellow-color rounded-full size-2.5 mr-6 shrink-0"></span>
               {`${e}`}
               </p>
             )}
-            {/* <p className="text-secondary-color flex items-center">
-              <span className="bg-yellow-color rounded-full size-3 mr-6 shrink-0"></span>{" "}
-              Work closly with sales system Seibel and salesforce, help identify
-              customer needs, propose solutions, conduct product demonstrations,
-              and address technical questions or concerns.
-            </p> */}
+
           </div>
         </div>
       </div>
