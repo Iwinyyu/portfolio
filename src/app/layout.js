@@ -29,7 +29,6 @@ export default function RootLayout({ children }) {
       className={`${roboto.variable} ${space.variable} overflow-x-hidden font-Roboto`}
     >
       <body className="bg-dark-color w-full">
-        {/* <Firstload /> */}
         <Navbar />
         {children}
       </body>

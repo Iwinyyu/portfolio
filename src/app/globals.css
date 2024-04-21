@@ -45,8 +45,11 @@
 .logocontainer:hover > button > svg {
   animation-play-state: paused;
 }
+.img{
+  transform: translate(-1rem,-1rem);
+}
 .photo-container:hover > div > .img {
-  transform: translate(-1.5rem,-1.5rem);
+  transform: translate(-2rem,-2rem);
 }
 
 

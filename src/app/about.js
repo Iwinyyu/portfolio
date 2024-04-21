@@ -42,7 +42,7 @@ export default function About() {
           </p>
           <p>technologies i have been working with:</p>
         </span>
-        <table className="text-secondary-color w-3/5 sm:w-full">
+        <table className="text-secondary-color w-3/5 md:w-full">
           <tbody className="flex justify-between">
             <tr>
               <td className="flex items-center">

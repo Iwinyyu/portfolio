@@ -22,7 +22,7 @@ export default function Navbar() {
   });
   return (
     <header
-      className={` nav w-screen bg-navdark-color logo fixed flex left-0 right-0 top-0 items-center px-6 md:px-11 backdrop-blur-sm justify-between ${ShowNav}`}
+      className={`z-50 nav w-screen bg-navdark-color logo fixed flex left-0 right-0 top-0 items-center px-6 md:px-11 backdrop-blur-sm justify-between ${ShowNav}`}
     >
       <div>
         <Logo />
@@ -31,7 +31,7 @@ export default function Navbar() {
         <Links direction={"horizontal"} />
         
       </div>
-      <Sidebar />
+      <Sidebar SetShowNav={SetShowNav}/>
     </header>
   );
 }
