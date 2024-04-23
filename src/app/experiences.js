@@ -62,15 +62,15 @@ export default function Experiences(props) {
   }
 
   return (
-    <div className="w-full py-36 flex flex-col items-center justify-center gap-5 sm:gap-10 max-w-[1000px">
-      <div className="flex items-center justify-center gap-5 w-full sm:w-3/4">
+    <div className="w-full py-36 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px] bg-slate-600 min-h-[700px]">
+      <div className="flex items-center justify-center gap-5 w-full sm:w-3/4 bg-red-400">
         <div className="text-2xl text-sub-color font-bold whitespace-nowrap">
           <span className="font-Space text-yellow-color ">02.</span>
           Experiences
         </div>
         <div className="h-[1px] bg-secondary-color w-full"></div>
       </div>
-      <div className="flex flex-col sm:flex-row w-full sm:w-3/4">
+      <div className="flex flex-col sm:flex-row w-full sm:w-3/4 bg-red-400">
         <div className="overscroll-contain tabs overflow-x-auto overflow-y-hidden sm:overflow-visible font-Space text-sm relative flex flex-row sm:flex-col [&>button]:transition [&>button]:duration-200 hover:[&>button]:bg-darken-color hover:[&>button]:text-yellow-color">
           {experiences.map((e) => (
             <button
