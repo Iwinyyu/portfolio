@@ -124,6 +124,10 @@
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
+.des{
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
 
 @keyframes spinBack {
   from {
@@ -142,11 +146,13 @@
     transform: rotate(360deg);
   }
 }
-@keyframes fadeInAnimation {
+@keyframes fadeIn{
   from {
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
+    transform: translateY(0%);
     opacity: 1;
   }
 }

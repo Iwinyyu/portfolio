@@ -62,7 +62,7 @@ export default function Experiences(props) {
   }
 
   return (
-    <div className="w-full py-10 flex flex-col items-center justify-center gap-5 sm:gap-10 max-w-[1000px]">
+    <div className="w-full py-36 flex flex-col items-center justify-center gap-5 sm:gap-10 max-w-[1000px">
       <div className="flex items-center justify-center gap-5 w-full sm:w-3/4">
         <div className="text-2xl text-sub-color font-bold whitespace-nowrap">
           <span className="font-Space text-yellow-color ">02.</span>
@@ -84,13 +84,13 @@ export default function Experiences(props) {
             </button>
           ))}
           <div
-            className={`transition duration-500 h-[2px] w-36 bottom-0 sm:top-0 sm:w-[2px] sm:h-11 bg-yellow-color absolute sm:${
+            className={`transition duration-500 h-[2px] w-36 bottom-0 sm:top-0 sm:w-[2px] sm:h-11 bg-yellow-color absolute ${
               ShowInfo === 3
-                ? "translate-y-[300%]"
+                ? "sm:translate-y-[300%] sm:translate-x-[0]"
                 : ShowInfo === 2
-                ? "translate-y-[200%]"
+                ? "sm:translate-y-[200%] sm:translate-x-[0]"
                 : ShowInfo === 1
-                ? "translate-y-[100%]"
+                ? "sm:translate-y-[100%] sm:translate-x-[0]"
                 : ""
             } ${
               ShowInfo === 3
@@ -103,8 +103,7 @@ export default function Experiences(props) {
             }`}
           ></div>
         </div>
-        <div className="py-4 sm:px-2">
-          {}
+        <div className="des sm:px-2 transition">
           <div className="title flex flex-col pb-6">
             <span className="text-sub-color text-xl font-semibold">
               {`${experiences[ShowInfo].job}`}{" "}
@@ -113,13 +112,15 @@ export default function Experiences(props) {
             <span className="text-secondary-color text-sm font-Space">{`${experiences[ShowInfo].monthStart}`}</span>
           </div>
           <div className="description">
-            {experiences[ShowInfo].descriptions.map((e) => 
-              <p key={e} className="text-secondary-color flex items-center py-1">
+            {experiences[ShowInfo].descriptions.map((e) => (
+              <p
+                key={e}
+                className="text-secondary-color flex items-center py-1"
+              >
                 <span className="bg-yellow-color rounded-full size-2.5 mr-6 shrink-0"></span>
-              {`${e}`}
+                {`${e}`}
               </p>
-            )}
-
+            ))}
           </div>
         </div>
       </div>
