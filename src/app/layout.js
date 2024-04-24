@@ -1,7 +1,7 @@
 import { Roboto, Space_Mono } from "next/font/google";
 import dynamic from "next/dynamic";
 import "./globals.css";
-const Navbar = dynamic(()=> import("./Navbar"), {ssr:false})
+const Navbar = dynamic(()=> import("./navbar"), {ssr:false})
 
 const roboto = Roboto({
   subsets: ["latin"],

@@ -5,7 +5,7 @@ const project = [
   {
     Name: "Wavecircle",
     description:
-      "A one page app that let you design and export(SVG/PNG) a random wave-like circle, where you can have multiple layers of the cirles aswell.",
+      `A one page app that let you design and <span className="font-Space text-yellow-color">export(SVG/PNG)</span> a random wave-like circle, where you can have multiple layers of the cirles aswell.`,
     skills: ["react", "VScode"],
     gitlink: "https://wavecircles.net",
     pagelink: "https://github.com/Iwinyyu/SvgWaves.git",
@@ -43,21 +43,21 @@ export default function Projects() {
       </div>
       <ul>
         <li>
-          <div className="grid grid-cols-12 ">
-            <div className="col-start-1 col-end-12 row-start-1 row-end-1">
+          <div className="grid grid-cols-12">
+            <div className="relative rounded-md overflow-hidden col-start-1 col-end-13 row-start-1 row-end-1">
               <Image
                 src={project[0].photo}
                 width={400}
                 height={400}
-                className="w-full object-cover"
+                className="w-full h-[300px] object-cover"
               ></Image>
-              <div></div>
+              <div className="absolute inset-0 bg-darken-color"></div>
             </div>
-          <div className="col-start-1 col-end-12 row-start-1 row-end-1">
+          <div className="p-5 flex flex-col z-10 col-start-1 col-end-13 row-start-1 row-end-1">
             <span className="font-Space text-yellow-color">faverate project</span>
-            <span>Wavecircle</span>
-            <div className="projectdes"></div>
-            <div className="skills"></div>
+            <span className="name text-sub-color text-3xl font-semibold">Wavecircle</span>
+            <div className="projectdes text-secondary-color py-4"> {project[0].description} </div>
+            <div className="skills"> <span className="text-secondary-color">React</span> </div>
             <div className="projectlinks"></div>
           </div>
           </div>
