@@ -1,5 +1,5 @@
 "use client";
-import Logo from "./logo";
+import Logo from "./Logo";
 import Links from "./Links";
 import Sidebar from "./Sidebar";
 import { useState } from "react";

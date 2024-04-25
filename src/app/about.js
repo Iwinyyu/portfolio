@@ -3,8 +3,8 @@ import ME from "./me.jpeg";
 
 export default function About() {
   return (
-    <div className="w-full py-36 flex items-center justify-center gap-10 max-w-[1000px] flex-wrap">
-      <div className="flex items-center gap-5 w-full">
+    <div id="about" className="w-full py-36 flex items-center justify-center gap-10 max-w-[1000px] flex-wrap">
+      <div className="flex items-center justify-center gap-5 w-full">
         <div className="text-2xl text-sub-color font-bold whitespace-nowrap">
           <span className="font-Space text-yellow-color ">01.</span>
           About Me

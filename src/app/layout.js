@@ -1,7 +1,8 @@
 import { Roboto, Space_Mono } from "next/font/google";
+
 import dynamic from "next/dynamic";
 import "./globals.css";
-const Navbar = dynamic(()=> import("./navbar"), {ssr:false})
+const Navbar = dynamic(()=> import("./Navbar"), {ssr:false})
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -26,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${roboto.variable} ${space.variable} overflow-x-hidden font-Roboto`}
+      className={`${roboto.variable} ${space.variable} overflow-x-hidden font-Roboto scroll-smooth`}
     >
       <body className="bg-dark-color w-full">
         <Navbar />

@@ -20,7 +20,7 @@ module.exports = {
         'yellow-color': 'rgb(255, 244, 85)',
         'subyellow-color': 'rgba(255, 244, 85, 0.7)',
         'sub-color':'rgba(225, 232, 235, 1)',
-        'secondary-color':'rgb(136, 146, 176)',
+        'secondary-color':'rgb(152, 160, 184)',
         'sub-color70':'rgba(225, 232, 235, 0.7)',
 
       },
