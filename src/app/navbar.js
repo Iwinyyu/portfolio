@@ -1,6 +1,7 @@
 "use client";
 import Logo from "./Logo";
 import Links from "./Links";
+import Link from "next/link";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
 
@@ -24,9 +25,9 @@ export default function Navbar() {
     <header
       className={`z-50 nav w-screen bg-navdark-color logo fixed flex left-0 right-0 top-0 items-center px-6 md:px-11 backdrop-blur-sm justify-between ${ShowNav}`}
     >
-      <div>
+      <Link href={"#header"}>
         <Logo />
-      </div>
+      </Link>
       <div className="links flex items-center">
         <Links direction={"horizontal"} />
         

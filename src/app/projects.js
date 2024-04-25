@@ -17,7 +17,7 @@ const project = [
         cirles aswell.
       </p>
     ),
-    skills: ["react", "VScode"],
+    skills: ["react", "VScode", "Netlify", "Math"],
     gitlink: "https://github.com/Iwinyyu/SvgWaves.git",
     pagelink: "https://wavecircles.net",
     photo: `/Wavecircle.png`,
@@ -44,7 +44,7 @@ const project = [
     Name: "Bank",
     description: (
       <p>
-        An one page banking app intro, dark theme with gradient background to
+        An one page banking app intro, dark theme that utilizes gradient background to
         emphasis important content created with tailwindCSS and react.
       </p>
     ),
@@ -57,7 +57,7 @@ const project = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="w-full py-36 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px]">
+    <div id="projects" className="w-full py-24 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px]">
       <div className="flex items-center justify-center gap-5 w-full sm:w-3/4">
         <div className="text-2xl text-sub-color font-bold whitespace-nowrap">
           <span className="font-Space text-yellow-color ">03.</span>

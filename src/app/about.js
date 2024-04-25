@@ -16,7 +16,7 @@ export default function About() {
           <p>
             <span className="text-yellow-color">Hello World!</span> I'm Ivan,
             and there are three things I love: creating, explaining, making
-            money and gym. Well, I guess that's actually four things, but math
+            money and gym. Well, four things actually, but math
             isn't one of them. My journey in web development began two years ago
             when I aimed for top grades in Web design. It turns out that
             building a rough TODO list taught me a lot about JS, CSS, and HTML.

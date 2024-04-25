@@ -1,6 +1,6 @@
 export default function Heading() {
   return (
-    <div className="h-screen max-w-[900px] w-full flex flex-col justify-center items-start tracking-wide gap-4">
+    <div id="header" className="h-screen max-w-[900px] w-full flex flex-col justify-center items-start tracking-wide gap-4">
       <span className="font-Space text-yellow-color">Hey, this is </span>
       <span className="capitalize text-sub-color text-5xl sm:text-8xl font-bold">
         ivan yu.

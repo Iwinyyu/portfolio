@@ -62,8 +62,8 @@ export default function Experiences(props) {
   }
 
   return (
-    <div id="experiences" className="w-full py-36 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px] min-h-[700px]">
-      <div className="flex items-center justify-center gap-5 w-full sm:w-3/4">
+    <div id="experiences" className="w-full py-24 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px] min-h-[650px]">
+      <div className="flex items-center justify-center gap-5 w-full sm:w-3/4 ">
         <div className="text-2xl text-sub-color font-bold whitespace-nowrap">
           <span className="font-Space text-yellow-color ">02.</span>
           Experiences
