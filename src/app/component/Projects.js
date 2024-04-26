@@ -89,7 +89,7 @@ export default function Projects() {
                   height={400}
                   className="w-full h-[300px] sm:h-[400px] object-cover"
                 ></Image>
-                <div className="absolute inset-0 bg-darken-color md:bg-transparent"></div>
+                <Link target="_blank" href={p.pagelink} className="z-20 absolute inset-0 bg-darken-color md:bg-transparent"></Link>
               </div>
               <div className="p-5 flex flex-col z-10 col-start-1 md:col-start-6 col-end-13 row-start-1 row-end-1 md:text-right justify-center sm:px-20 md:p-5">
                 <span className="font-Space text-yellow-color text-sm">
@@ -138,7 +138,7 @@ export default function Projects() {
                   height={400}
                   className="w-full h-[300px] sm:h-[400px] object-cover"
                 ></Image>
-                <div className="absolute inset-0 bg-darken-color md:bg-transparent"></div>
+                <Link target="_blank" href={p.pagelink} className="z-20 cursor-pointer absolute inset-0 bg-darken-color md:bg-transparent"></Link>
               </div>
               <div className="p-5 flex flex-col z-10 col-start-1 md:col-start-1 md:col-end-8 col-end-13 row-start-1 row-end-1 md:text-left justify-center sm:px-20 md:p-5">
                 <span className="font-Space text-yellow-color text-sm">
