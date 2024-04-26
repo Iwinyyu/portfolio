@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { FiGithub } from "react-icons/fi";
 import { GoProjectSymlink } from "react-icons/go";
+import { useInView } from 'react-intersection-observer';
+
 import Link from "next/link";
 
 // import Wavecircle from "./Wavecircle.png"
@@ -56,8 +58,12 @@ const project = [
 ];
 
 export default function Projects() {
+  const { ref, inView } = useInView({
+    delay:2000,
+    triggerOnce:true,
+  });
   return (
-    <div id="projects" className="w-full py-24 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px]">
+    <div ref={ref} id="projects" className={`transition ${inView? " intersect":""} w-full my-24 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px]`}>
       <div className="flex items-center justify-center gap-5 w-full sm:w-3/4">
         <div className="text-2xl text-sub-color font-bold whitespace-nowrap">
           <span className="font-Space text-yellow-color ">03.</span>

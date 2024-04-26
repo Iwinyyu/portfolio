@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${roboto.variable} ${space.variable} overflow-x-hidden font-Roboto scroll-smooth`}
+      className={`all ${roboto.variable} ${space.variable} overflow-x-hidden font-Roboto scroll-smooth`}
     >
       <body className="bg-dark-color w-full">
         <Navbar />

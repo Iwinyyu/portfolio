@@ -8,17 +8,35 @@ export default function Sidebar(props) {
 
   function handleanimation() {
     let cord = window.scrollY;
+    const j = document.querySelector(".all");
     if (SideNav === false) {
       document.body.style.position = "fixed";
+      console.log(j.classList[5]);
       document.body.style.top = `-${cord}px`;
     } else {
       const scrollY = document.body.style.top;
+      j.classList.remove("scroll-smooth");
       document.body.style.position = "";
       document.body.style.top = "";
+      console.log(j.classList[5]);
       window.scrollTo(0, parseInt(scrollY || "0") * -1);
+      j.classList.add("scroll-smooth");
     }
     SetSideNav(!SideNav);
   }
+  const OnResize = (e) => {
+    if (e.currentTarget.innerWidth > 768) {
+      // const scrollY = document.body.style.top;
+      // document.body.style.position = "";
+      // document.body.style.top = "";
+      // window.scrollTo(0, parseInt(scrollY || "0") * -1);
+
+      SetSideNav(false);
+    }
+  };
+  window.addEventListener("resize", OnResize);
+
+  // SideNav?document.body.style.overflow="hidden":document.body.style.overflow="auto"
 
   return (
     <Fragment>
@@ -38,12 +56,17 @@ export default function Sidebar(props) {
         />
       </button>
       <div
-        className={`fixed w-dvw h-screen top-0 bottom-0 left-full reltive touch-none transition backdrop-blur-sm z-20 ${
+        className={` fixed w-dvw h-screen top-0 bottom-0 left-full reltive touch-none transition backdrop-blur-sm z-20 ${
           SideNav ? "-translate-x-full" : ""
         } sm:hidden`}
       >
-        <div className="absolute top-0 right-0 bottom-0 bg-darken-color w-4/6 h-screen flex justify-center items-center">
-          <Links direction={"vertical"} />
+        <div
+          onClick={handleanimation}
+          className=" absolute top-0 left-0 bottom-0 w-1/3 h-screen"
+        ></div>
+        {/* <div className="fixed bg-red-400/80 top-0 bottom-0 left-0 right-0 z-50 overscroll-contain"></div> */}
+        <div className=" absolute top-0 right-0 bottom-0 bg-darken-color w-4/6 h-screen flex justify-center items-center">
+          <Links direction={"vertical"} setsidenav={() => handleanimation()} />
         </div>
       </div>
     </Fragment>

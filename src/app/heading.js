@@ -1,6 +1,14 @@
+
+
+import { useInView } from 'react-intersection-observer';
+
 export default function Heading() {
+  const { ref, inView } = useInView({
+    delay:2000,
+    triggerOnce:true,
+  });
   return (
-    <div id="header" className="h-screen max-w-[900px] w-full flex flex-col justify-center items-start tracking-wide gap-4">
+    <div ref={ref} id="header" className={`transition ${inView? " intersect":""} h-screen max-w-[900px] w-full flex flex-col justify-center items-start tracking-wide gap-4`}>
       <span className="font-Space text-yellow-color">Hey, this is </span>
       <span className="capitalize text-sub-color text-5xl sm:text-8xl font-bold">
         ivan yu.

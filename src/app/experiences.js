@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useInView } from 'react-intersection-observer';
 
 const experiences = [
   {
@@ -56,13 +57,17 @@ const experiences = [
 
 export default function Experiences(props) {
   const [ShowInfo, SetShowInfo] = useState(0);
+  const { ref, inView } = useInView({
+    delay:2000,
+    triggerOnce:true,
+  });
 
   function handleclick(index) {
     SetShowInfo(index);
   }
 
   return (
-    <div id="experiences" className="w-full py-24 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px] min-h-[650px]">
+    <div ref={ref} id="experiences" className={`transition ${inView ? "intersect" : ""} w-full my-24 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px] min-h-[550px]`}>
       <div className="flex items-center justify-center gap-5 w-full sm:w-3/4 ">
         <div className="text-2xl text-sub-color font-bold whitespace-nowrap">
           <span className="font-Space text-yellow-color ">02.</span>
