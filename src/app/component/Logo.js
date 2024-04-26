@@ -1,4 +1,4 @@
-export default function Logo(fill) {
+export default function Logo() {
   return (
     <div className="logowrapper relative w-[55px] h-[55px] logocontainer">
       <svg

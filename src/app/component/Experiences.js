@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 
 const experiences = [
   {
@@ -58,8 +58,8 @@ const experiences = [
 export default function Experiences(props) {
   const [ShowInfo, SetShowInfo] = useState(0);
   const { ref, inView } = useInView({
-    delay:2000,
-    triggerOnce:true,
+    delay: 2000,
+    triggerOnce: true,
   });
 
   function handleclick(index) {
@@ -67,7 +67,13 @@ export default function Experiences(props) {
   }
 
   return (
-    <div ref={ref} id="experiences" className={`transition ${inView ? "intersect" : ""} w-full my-24 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px] min-h-[550px]`}>
+    <div
+      ref={ref}
+      id="experiences"
+      className={`transition ${
+        inView ? "intersect" : ""
+      } w-full my-24 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px] min-h-[550px]`}
+    >
       <div className="flex items-center justify-center gap-5 w-full sm:w-3/4 ">
         <div className="text-2xl text-sub-color font-bold whitespace-nowrap">
           <span className="font-Space text-yellow-color ">02.</span>
@@ -78,7 +84,6 @@ export default function Experiences(props) {
       <div className="flex flex-col sm:flex-row w-full sm:w-3/4">
         <div className="overscroll-contain tabs overflow-x-auto overflow-y-hidden sm:overflow-visible font-Space text-sm relative flex flex-row sm:flex-col [&>button]:transition [&>button]:duration-200 hover:[&>button]:bg-darken-color hover:[&>button]:text-yellow-color">
           {experiences.map((e) => (
-            
             <button
               onClick={() => handleclick(e.id)}
               key={e.id}

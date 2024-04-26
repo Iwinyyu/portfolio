@@ -2,11 +2,10 @@
 import Image from "next/image";
 import { FiGithub } from "react-icons/fi";
 import { GoProjectSymlink } from "react-icons/go";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 
 import Link from "next/link";
 
-// import Wavecircle from "./Wavecircle.png"
 const project = [
   {
     id: 0,
@@ -46,8 +45,9 @@ const project = [
     Name: "Bank",
     description: (
       <p>
-        An one page banking app intro, dark theme that utilizes gradient background to
-        emphasis important content created with tailwindCSS and react.
+        An one page banking app intro, dark theme that utilizes gradient
+        background to emphasis important content created with tailwindCSS and
+        react.
       </p>
     ),
     skills: ["react", "VScode", "JS", "CSS", "tailwind", "vite"],
@@ -59,11 +59,17 @@ const project = [
 
 export default function Projects() {
   const { ref, inView } = useInView({
-    delay:2000,
-    triggerOnce:true,
+    delay: 2000,
+    triggerOnce: true,
   });
   return (
-    <div ref={ref} id="projects" className={`transition ${inView? " intersect":""} w-full my-24 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px]`}>
+    <div
+      ref={ref}
+      id="projects"
+      className={`transition ${
+        inView ? " intersect" : ""
+      } w-full my-24 flex flex-col items-center justify-start gap-5 sm:gap-10 max-w-[1000px]`}
+    >
       <div className="flex items-center justify-center gap-5 w-full sm:w-3/4">
         <div className="text-2xl text-sub-color font-bold whitespace-nowrap">
           <span className="font-Space text-yellow-color ">03.</span>

@@ -3,7 +3,7 @@ import { Fragment, useState } from "react";
 import { RiMenu3Fill, RiArrowRightDoubleFill } from "react-icons/ri";
 import Links from "./Links";
 
-export default function Sidebar(props) {
+export default function Sidebar() {
   const [SideNav, SetSideNav] = useState(false);
 
   function handleanimation() {

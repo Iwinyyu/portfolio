@@ -1,15 +1,20 @@
 import Image from "next/image";
 import ME from "../../../public/images/me.jpeg";
-import { useInView } from 'react-intersection-observer';
-
+import { useInView } from "react-intersection-observer";
 
 export default function About() {
-  const { ref:aboutref, inView:aboutinview } = useInView({
-    delay:2000,
-    triggerOnce:true,
+  const { ref: aboutref, inView: aboutinview } = useInView({
+    delay: 2000,
+    triggerOnce: true,
   });
   return (
-    <div ref={aboutref} id="about" className={`transition ${aboutinview? " intersect":""} w-full py-36 flex items-center justify-center gap-10 max-w-[1000px] flex-wrap`}>
+    <div
+      ref={aboutref}
+      id="about"
+      className={`transition ${
+        aboutinview ? " intersect" : ""
+      } w-full py-36 flex items-center justify-center gap-10 max-w-[1000px] flex-wrap`}
+    >
       <div className="flex items-center justify-center gap-5 w-full">
         <div className="text-2xl text-sub-color font-bold whitespace-nowrap">
           <span className="font-Space text-yellow-color ">01.</span>
@@ -22,10 +27,10 @@ export default function About() {
           <p>
             <span className="text-yellow-color">Hello World!</span> I'm Ivan,
             and there are three things I love: creating, explaining, making
-            money and gym. Well, four things actually, but math
-            isn't one of them. My journey in web development began two years ago
-            when I aimed for top grades in Web design. It turns out that
-            building a rough TODO list taught me a lot about JS, CSS, and HTML.
+            money and gym. Well, four things actually, but math isn't one of
+            them. My journey in web development began two years ago when I aimed
+            for top grades in Web design. It turns out that building a rough
+            TODO list taught me a lot about JS, CSS, and HTML.
           </p>
           <p>
             Currently working in Telstra retail. a bit Irrelevant to web dev,
