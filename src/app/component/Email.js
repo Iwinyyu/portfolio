@@ -16,13 +16,13 @@ export default function Email() {
     >
       <span className="font-Space text-yellow-color text-sm">
         {" "}
-        04. What's Next?
+        04. What&#39;s Next?
       </span>
       <span className="text-4xl text-sub-color">Get In Touch</span>
       <span className="text-secondary-color align-middle text-center">
-        <span className="text-yellow-color">YES!!</span> I'm actively looking
+        <span className="text-yellow-color">YES!!</span> I&#39;m actively looking
         for job, my inbox is always open. whether you have oppotunitues for me
-        or just want to say hi, i'll try my best to get back to you!
+        or just want to say hi, i&#39;ll try my best to get back to you!
       </span>
       <div className="l5 transition ease-out cursor-pointer text-yellow-color capitalize bg-yellow-color rounded-md">
         <button

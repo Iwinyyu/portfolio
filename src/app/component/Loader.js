@@ -55,6 +55,7 @@ export default function Loader({ finishLoading }) {
     const timeout = setTimeout(() => {}, 10);
     animate();
     return () => clearTimeout(timeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <Fragment>

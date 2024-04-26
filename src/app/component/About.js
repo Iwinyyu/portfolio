@@ -25,9 +25,9 @@ export default function About() {
       <div className="w-full md:basis-6/12">
         <span className="text-secondary-color w-full md:w-fit text-xl [&>*]:mb-3">
           <p>
-            <span className="text-yellow-color">Hello World!</span> I'm Ivan,
+            <span className="text-yellow-color">Hello World!</span> I&#39;m Ivan,
             and there are three things I love: creating, explaining, making
-            money and gym. Well, four things actually, but math isn't one of
+            money and gym. Well, four things actually, but math isn&#39;t one of
             them. My journey in web development began two years ago when I aimed
             for top grades in Web design. It turns out that building a rough
             TODO list taught me a lot about JS, CSS, and HTML.
@@ -39,16 +39,16 @@ export default function About() {
             main focus these days are building{" "}
             <span className="text-yellow-color">responsive</span>,{" "}
             <span className="text-yellow-color">accessible</span> and{" "}
-            <span className="text-yellow-color">inclusive</span> websites. I've
+            <span className="text-yellow-color">inclusive</span> websites. I&#39;ve
             also built a couple of{" "}
             <span className="text-yellow-color">e-commerce</span> sites to test
             the waters in backend dev.
           </p>
           <p>
-            What I’m really looking for is to integrate my knowledge in website
+            What I&#39;m really looking for is to integrate my knowledge in website
             development, understanding of business processes, and my experience
-            in client communication. To be honest, I'm still a little confused
-            about what jobs would best fit me, but I'm definitely open to{" "}
+            in client communication. To be honest, I&#39;m still a little confused
+            about what jobs would best fit me, but I&#39;m definitely open to{" "}
             <span className="text-yellow-color">ideas!</span>
           </p>
           <p>technologies i have been working with:</p>

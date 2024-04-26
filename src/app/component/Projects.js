@@ -73,7 +73,7 @@ export default function Projects() {
       <div className="flex items-center justify-center gap-5 w-full sm:w-3/4">
         <div className="text-2xl text-sub-color font-bold whitespace-nowrap">
           <span className="font-Space text-yellow-color ">03.</span>
-          Things I've Built
+          Things I&#39;ve Built
         </div>
         <div className="h-[1px] bg-secondary-color w-full"></div>
       </div>

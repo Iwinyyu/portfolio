@@ -27,7 +27,7 @@ export default function Footer() {
         </Link>
       </div>
       <span>credit to</span>
-      <span>Brittany Chiang's help in design</span>
+      <span>Brittany Chiang&#39;s help in design</span>
       <span>built by Ivan Yu</span>
     </div>
   );
