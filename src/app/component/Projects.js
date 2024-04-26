@@ -21,7 +21,7 @@ const project = [
     skills: ["react", "VScode", "Netlify", "Math"],
     gitlink: "https://github.com/Iwinyyu/SvgWaves.git",
     pagelink: "https://wavecircles.net",
-    photo: `/Wavecircle.png`,
+    photo: `/images/Wavecircle.png`,
   },
   {
     id: 1,
@@ -38,7 +38,7 @@ const project = [
     skills: ["react", "VScode", "JS", "SCSS"],
     gitlink: "https://github.com/Iwinyyu/beat.git",
     pagelink: "https://iwinyyu.github.io/beat/",
-    photo: "/xbeat.png",
+    photo: "/images/xbeat.png",
   },
   {
     id: 2,
@@ -53,7 +53,7 @@ const project = [
     skills: ["react", "VScode", "JS", "CSS", "tailwind", "vite"],
     gitlink: "https://github.com/Iwinyyu/bank-app-design.git",
     pagelink: "https://iwinyyu.github.io/bank-app-design/#",
-    photo: "/bank.png",
+    photo: "/images/bank.png",
   },
 ];
 
