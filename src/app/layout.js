@@ -21,6 +21,9 @@ const space = Space_Mono({
 export const metadata = {
   title: "Ivan Yu",
   description: "Portfoilo",
+  icons: {
+    icon: '/Y.png', 
+  },
 };
 
 export default function RootLayout({ children }) {
