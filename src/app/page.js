@@ -1,12 +1,12 @@
 "use client";
-import Heading from "./heading";
-import Contacts from "./contacts";
-import About from "./about";
-import Experiences from "./experiences";
-import Email from "./Email";
-import Footer from "./Footer";
-import Projects from "./projects";
-import Loader from "./Loader";
+import Heading from "./component/Heading";
+import Contacts from "./component/Contacts";
+import About from "./component/About";
+import Experiences from "./component/Experiences";
+import Email from "./component/Email";
+import Footer from "./component/Footer";
+import Projects from "./component/Projects";
+import Loader from "./component/Loader";
 import { useInView } from 'react-intersection-observer';
 import { useState, useRef } from "react";
 export default function Home() {

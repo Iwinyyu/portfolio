@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, Fragment } from "react";
+import { useEffect, Fragment } from "react";
 import anime from "animejs/lib/anime.es.js";
 
 export default function Loader({ finishLoading }) {

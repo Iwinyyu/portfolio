@@ -1,8 +1,4 @@
-import { useState, useEffect } from "react";
-import anime from "animejs/lib/anime.es.js";
-
 export default function Logo(fill) {
-
   return (
     <div className="logowrapper relative w-[55px] h-[55px] logocontainer">
       <svg

@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 *,
 *::before,
@@ -90,7 +90,7 @@
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.intersect{
+.intersect {
   opacity: 0;
   animation: 1s slideup forwards;
 }

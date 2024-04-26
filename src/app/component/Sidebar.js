@@ -26,17 +26,10 @@ export default function Sidebar(props) {
   }
   const OnResize = (e) => {
     if (e.currentTarget.innerWidth > 768) {
-      // const scrollY = document.body.style.top;
-      // document.body.style.position = "";
-      // document.body.style.top = "";
-      // window.scrollTo(0, parseInt(scrollY || "0") * -1);
-
       SetSideNav(false);
     }
   };
   window.addEventListener("resize", OnResize);
-
-  // SideNav?document.body.style.overflow="hidden":document.body.style.overflow="auto"
 
   return (
     <Fragment>

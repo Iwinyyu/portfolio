@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ME from "./me.jpeg";
+import ME from "../../../public/images/me.jpeg";
 import { useInView } from 'react-intersection-observer';
 
 

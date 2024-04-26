@@ -1,5 +1,4 @@
 import { useInView } from 'react-intersection-observer';
-import Link from 'next/link';
 function openemail(){
   window.location.href = `mailto:ivan.yu1007@icloud.com`
 }
