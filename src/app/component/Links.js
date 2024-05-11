@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Fragment } from "react";
+import Resume from "../../../public/images/Resume.pdf";
 
 export default function Links(props) {
   return (
@@ -50,8 +51,10 @@ export default function Links(props) {
         </li>
         <li className="l5 transition ease-out cursor-pointer text-yellow-color capitalize bg-yellow-color rounded-md">
           <Link
+            href="images/Resume.pdf"
+            rel="noopener noreferrer"
+            locale={false}
             target="_blank"
-            href={"/Ivan_Yu_Developer.pdf"}
             className="transition duration-300 ease-in-out bg-dark-color hover:-translate-y-1 hover:-translate-x-1.5 py-2 px-3 rounded-md border-solid border-2 border-yellow-color"
           >
             resume

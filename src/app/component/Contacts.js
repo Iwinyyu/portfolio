@@ -12,7 +12,7 @@ export default function Contacts() {
       <div className="hidden px-5 fixed left-0 bottom-0 md:flex flex-col items-center gap-3">
         <Link
           target="_blank"
-          href={"www.linkedin.com/in/jingkun-ivan-yu"}
+          href={"https://www.linkedin.com/in/jingkun-ivan-yu"}
           className="p-2 [&>*]:hover:text-yellow-color [&>*]:hover:-translate-y-1"
         >
           <FiLinkedin className="transition duration-200 ease-out size-5 text-secondary-color" />
