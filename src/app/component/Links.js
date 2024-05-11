@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Fragment } from "react";
-import Resume from "../../../public/images/Resume.pdf";
 
 export default function Links(props) {
   return (
