@@ -1,7 +1,7 @@
 "use client";
 import { Fragment } from "react";
 import Link from "next/link";
-import { FiInstagram, FiLinkedin, FiGithub } from "react-icons/fi";
+import { FiInstagram, FiLinkedin, FiGithub,FiPaperclip } from "react-icons/fi";
 
 function openemail() {
   window.location.href = `mailto:ivan.yu1007@icloud.com`;
@@ -30,6 +30,13 @@ export default function Contacts() {
           className="p-2 [&>*]:hover:text-yellow-color [&>*]:hover:-translate-y-1"
         >
           <FiInstagram className="transition duration-200 ease-out size-5 text-secondary-color" />
+        </Link>
+        <Link
+          target="_blank"
+          href={"images/Transcript.pdf"}
+          className="p-2 [&>*]:hover:text-yellow-color [&>*]:hover:-translate-y-1"
+        >
+          <FiPaperclip className="transition duration-200 ease-out size-5 text-secondary-color" />
         </Link>
         <span className="h-24 w-[1px] rounded-sm border-solid border-0 border-x border-yellow-color"></span>
       </div>
